@@ -1,0 +1,7 @@
+html:after {
+  content: "";
+  background-image: url("https://picsum.photos/id/120/1200/900");
+  /* 複数の場合
+  background-image: url("hoge.jpg"), url("fuga.jpg"), url("piyo.jpg");
+  */
+}
