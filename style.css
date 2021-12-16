@@ -1,5 +1,42 @@
 body{
   font-family: sans-serif;
+  margin: 0;
+  background-color: #E6E9ED;
+}
+
+label{
+  display: flex;
+  align-items: center;
+}
+
+.radio-button{
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.radio-button::before{
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-size: 32px;
+  margin-right: -6px;
+}
+
+.radio-button.radio-button_noload::before{
+  background-image: url("./images/radio_off.png");
+}
+
+.radio-button.radio-button_noload:checked:before{
+  background-image: url("./images/radio_on.png");
+}
+
+.radio-button.radio-button_preload::before{
+  background-image: url("./images/radio_off_preload.png");
+}
+
+.radio-button.radio-button_preload:checked:before{
+  background-image: url("./images/radio_on_preload.png");
 }
 
 button{
